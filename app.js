@@ -11,6 +11,7 @@ var students = require('./routes/students');
 var exam = require('./routes/exam');
 var fee = require('./routes/fee');
 var attendance = require('./routes/attendance');
+var comment = require('./routes/comment');
 var app = express();
 
 // view engine setup
@@ -39,6 +40,7 @@ app.use('/students', students);
 app.use('/exam', exam);
 app.use('/fee', fee);
 app.use('/attendance', attendance );
+app.use('/comment', comment);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
